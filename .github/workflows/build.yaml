@@ -1,0 +1,43 @@
+name: ESP32 Full Firmware Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PlatformIO
+        run: |
+          python -m pip install --upgrade pip
+          pip install platformio
+
+      - name: Build firmware
+        run: pio run
+
+      - name: Collect output binaries (multi-environment-safe)
+        run: |
+          mkdir -p firmware
+          for env in .pio/build/*; do
+            envname=$(basename "$env")
+            cp -f "$env/firmware.bin" "firmware/firmware_${envname}.bin" || echo "Missing firmware.bin for $envname"
+            cp -f "$env/bootloader.bin" "firmware/bootloader_${envname}.bin" || echo "Missing bootloader.bin for $envname"
+            cp -f "$env/partitions.bin" "firmware/partitions_${envname}.bin" || echo "Missing partitions.bin for $envname"
+          done
+
+      - name: Upload all firmware files
+        uses: actions/upload-artifact@v4
+        with:
+          name: esp32-flash-binaries
+          path: firmware/
