@@ -1,6 +1,6 @@
 # Overview
 A repository that can stop mass deauth attacks
->[! CAUTION]
+>[!CAUTION]
 >This repository is created for educational purposes only, I am not responsible for any issue by using it and/or triggering someone
 # Build
 You can clone this repository and build it using VSCode and PlatformIO.
