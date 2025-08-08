@@ -1,7 +1,7 @@
 # Overview
 A repository that can stop mass deauth attacks
 >[!CAUTION]
->This repository is created for educational purposes only, I am not responsible for any issue by using it and/or triggering someone
+>This repository is created for educational purposes only, I am not responsible for any issue by using it and/or triggering someone. Ì you triggered some random kids, then... I don't know, solve it yourself.
 # Build
 You can clone this repository and build it using VSCode and PlatformIO or using Github Actions.
 # License
