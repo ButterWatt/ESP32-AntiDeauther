@@ -8,6 +8,7 @@ You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-An
 It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms, AP name and random MAC address will be change and hosted back.
 >[!IMPORTANT]
 >It will only stop mass deauth flood, not targeted deauth. It's likes preventing some kids try to use fake gun.
+
 >If you blame me for this, please, read twice.
 # License
 All files within this repo are released under the GNU GPL V3 License as per the LICENSE file stored in the root of this repo.
