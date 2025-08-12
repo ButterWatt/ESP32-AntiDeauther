@@ -7,13 +7,13 @@ A repository that can stop mass deauth attacks
 # Build
 You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-AntiDeauther.git`) and build it using VSCode and PlatformIO or using Github Actions.
 # How it works
-It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (±50), AP name and random MAC address will be changed and hosted back.
+It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 50ms), AP name and random MAC address will be changed and hosted back.
 >[!IMPORTANT]
 >It will **only** stop mass deauth flood, not targeted deauth. It's likes preventing some kids try to use fake gun.
 >
 >If you blame me for this, please, read twice.
 
-# Quote of the rwpo
+# Quote of the repo
 >If you looking for AI girlfriend, please find therapist immediately.
 
 # License
