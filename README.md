@@ -14,7 +14,7 @@ It will create an AP, after detecting deauth packages, it will shutdown the AP w
 >If you blame me for this, please, read twice.
 
 # Quote of the repo
-**If you looking for AI girlfriend, please find ant touch grass immediately.**
+**If you looking for AI girlfriend, please find and touch grass immediately.**
 
 # License
 All files within this repo are released under the GNU GPL V3 License as per the LICENSE file stored in the root of this repo.
