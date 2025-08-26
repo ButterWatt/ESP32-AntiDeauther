@@ -37,7 +37,7 @@ void handleToggleIfNeeded();
 void setup() {
     Serial.begin(115200);
     delay(1000);
-    Serial.println("\n[AntiDeauthMemeAP] Booting...");
+    Serial.println("\n[Info] Booting...");
 
     // Start sniffer mode
     esp_wifi_set_promiscuous(true);
@@ -53,7 +53,7 @@ void setup() {
 void loop() {
     if (deauthSeen) {
         deauthSeen = false;
-        Serial.println("[ALERT] Deauth detected - Processing toggle");
+        Serial.println("[Warn] Deauth detected - Processing toggle...");
         handleToggleIfNeeded();
     }
     delay(10);
@@ -118,9 +118,9 @@ void randomizeAPmac() {
         char buf[32];
         sprintf(buf, "%02X:%02X:%02X:%02X:%02X:%02X",
                 mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-        Serial.printf("[INFO] AP MAC set to %s\n", buf);
+        Serial.printf("[Info] AP MAC set to %s\n", buf);
     } else {
-        Serial.println("[ERR] set_mac failed");
+        Serial.println("[Erro] set_mac failed");
     }
 }
 
@@ -133,7 +133,7 @@ void handleToggleIfNeeded() {
     }
 
     if (togglesInWindow >= MAX_TOGGLES_PER_MIN) {
-        Serial.println("[WARN] Max toggles reached, cooldown...");
+        Serial.println("[Warn] Max toggles reached, cooling down...");
         return;
     }
 
@@ -143,7 +143,7 @@ void handleToggleIfNeeded() {
     int jitter = random(-JITTER_MS, JITTER_MS + 1);
     int offTime = max(100, baseOff + jitter);
 
-    Serial.printf("[INFO] Sleeping AP for %d ms\n", offTime);
+    Serial.printf("[Info] Sleeping AP for %d ms\n", offTime);
     delay(offTime);
 
     memeIndex = (memeIndex + 1) % memeCount;
@@ -152,5 +152,5 @@ void handleToggleIfNeeded() {
 
     togglesInWindow++;
     lastToggleTime = now;
-    Serial.printf("[INFO] Toggle done. Toggles in window: %d\n", togglesInWindow);
+    Serial.printf("[Info] Toggle done. Toggles in window: %d\n", togglesInWindow);
 }
