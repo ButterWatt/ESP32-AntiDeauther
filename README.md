@@ -9,7 +9,7 @@ You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-An
 # How it works
 It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 50ms), AP name and random MAC address will be applied and hosted back.
 >[!IMPORTANT]
->It will **only** stop mass deauthencation flood, not targeted deauthencation, which mean targeted deauthencation would out of its scope. Exactly likes preventing some kids try to use fake gun.
+>It will **only** stop mass deauthencation flood, not targeted deauthencation, which mean targeted deauthencation would out of its protection scope. Exactly likes preventing some kids try to use fake gun, not sniper.
 >
 >If you blame me due to its protection not doing well to your actual access point, please, read twice.
 
