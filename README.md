@@ -3,7 +3,7 @@ A repository that can stop mass deauthencation attacks
 >[!CAUTION]
 >This repository is created for educational purposes only, I am not responsible for any issue by using it and/or triggering someone. If you triggered some random kids with those AP names, then... I don't know, solve it yourself.
 >
->If you try to report this repository for "breaking your fun", I can tell you are overreacting. 
+>If you try to report this repository for "ruining your mood", I can tell you are overreacting. 
 # Build
 You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-AntiDeauther.git`) and build it using VSCode and PlatformIO or using Github Actions.
 # How it works
