@@ -1,13 +1,13 @@
 #include <Arduino.h>
-#define buzzeePin 26
+#define buzzerPin 26
 int melody[] = {
   659, 587, 370, 415, 554, 494, 294, 330,
   494, 440, 277, 330, 440
 };
 
 int duration[] = {
-  130, 130, 130, 200, 130, 130, 130, 200,
-  130, 130, 130, 200, 200
+  130, 130, 130, 175, 130, 130, 130, 175,
+  130, 130, 130, 175, 200
 };
 
 int len = sizeof(melody) / sizeof(melody[0]);
