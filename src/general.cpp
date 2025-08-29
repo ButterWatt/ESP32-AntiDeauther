@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#define buzzeePin 26
 int melody[] = {
   659, 587, 370, 415, 554, 494, 294, 330,
   494, 440, 277, 330, 440
