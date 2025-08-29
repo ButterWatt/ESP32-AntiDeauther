@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "melody.h"
 int len = sizeof(melody) / sizeof(melody[0]);
 void playTone(int freq, int duration) {
