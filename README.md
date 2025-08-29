@@ -6,6 +6,8 @@ A repository that can stop mass deauthencation attacks
 >If you try to report this repository for "ruining your mood", I can tell you are overreacting. 
 # Build
 You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-AntiDeauther.git`) and build it using VSCode and PlatformIO or using Github Actions.
+>[!NOTE]
+>You can try `dev` branch if you want Nokia Tune.
 # How it works
 It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 50ms), AP name and random MAC address will be applied and hosted back.
 >[!IMPORTANT]
