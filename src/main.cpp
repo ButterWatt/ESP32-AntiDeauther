@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include "esp_wifi.h"
+#include "general.cpp"
 // ===== CONFIG =====
 const int AP_CHANNEL = 1;
 const int MIN_OFF_MS = 350;
