@@ -1,5 +1,5 @@
-#ifndef DEFINITIONS_H
-#define DEFINITIONS_H
+#ifdef MELODY_H
+#define MELODY_H
 
 int melody[] = {
   659, 587, 370, 415, 554, 494, 294, 330,
