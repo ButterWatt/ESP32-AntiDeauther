@@ -1,6 +1,6 @@
 #include <WiFi.h>
 #include "esp_wifi.h"
-
+#include "melody.h"
 // ===== CONFIG =====
 const int AP_CHANNEL = 1;
 const int MIN_OFF_MS = 350;
@@ -38,6 +38,7 @@ void setup() {
     Serial.begin(115200);
     delay(1000);
     Serial.println("\n[Info] Booting...");
+    playMelody(melody, duration, len);
 
     // Start sniffer mode
     esp_wifi_set_promiscuous(true);
