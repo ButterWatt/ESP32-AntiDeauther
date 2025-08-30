@@ -21,7 +21,7 @@ It will create an AP, after detecting deauth packages, it will shutdown the AP w
 >If you blame me due to its protection not doing well to your actual access point, please, read twice. Remember that's not my fault when that situation occurs.
 
  # Quote of the repo
-**If you are looking for AI girlfriend, please find and touch grass immediately.** -Butter, who found themself writing complain in the dark.
+**If you are looking for AI girlfriend, please find and touch grass immediately. Also the life still long, your mind still need grass** -Butter, who found themself writing complain in the dark.
 >[!TIP]
 >Little did you know: *I made this repository and the quote when I was bored, basicly*
 >
