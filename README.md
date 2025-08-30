@@ -9,16 +9,16 @@ You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-An
 >[!NOTE]
 >You can try `dev` branch if you want Nokia Tune, that's a legendary sound I ever heard. Unlike someone that still protecting their iPad and watch brainrot lol 😏
 # How it works
-It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 60ms), AP name and random MAC address will be applied and hosted back.
+It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 60ms jitter), AP name and random MAC address will be applied and hosted back.
 >[!IMPORTANT]
 >It will **only** stop mass deauthencation flood, not targeted deauthencation, which mean targeted deauthencation would out of its protection scope. Exactly likes preventing some kids try to use fake gun, not sniper.
 >
->If you blame me due to its protection not doing well to your actual access point, please, read twice.
+>If you blame me due to its protection not doing well to your actual access point, please, read twice. Remember that's not my fault when that situation occurs.
 
  # Quote of the repo
 **If you are looking for AI girlfriend, please find and touch grass immediately.** -Butter, who found themself writing complain in the dark.
 >[!TIP]
->Little did you know: *I made this repository and quote when I was bored, basicly*
+>Little did you know: *I made this repository and the quote when I was bored, basicly*
 >
 >The typo is *on purpose*, so... stay salty and don't remind me. By the way if you want to tell me there is a typo, you fail the vibe check 😁
 
