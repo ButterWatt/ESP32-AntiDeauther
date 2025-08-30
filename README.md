@@ -1,11 +1,11 @@
 # Overview
 A repository that can stop mass deauthencation attacks
->[!CAUTION]
+>[!DISCLAIMER]
 >This repository is created for educational purposes only, I am not responsible for any issue by using it and/or triggering someone. If you triggered some random kids with those AP names, then... I don't know, solve it yourself, you must be responsible for your actions.
 >
 >*YOU MUST BE RESPONSIBLE FOR YOUR ACTIONS, RIGHT???*
 >
->I know you don't want to do bird or money flies away, so you know what you should do and what should not.
+>I know you don't want to do bird or let money fly away, so you know what you should do and what should not, stay smart or stay in cell, you will choose the first one for sure.
 >
 >If you try to report this repository for "ruining your mood", I can tell you are overreacting. 
 # Build
