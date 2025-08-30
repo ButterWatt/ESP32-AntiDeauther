@@ -1,6 +1,6 @@
 # Overview
 A repository that can stop mass deauthencation attacks
->[!DISCLAIMER]
+>[!CAUTION]
 >This repository is created for educational purposes only, I am not responsible for any issue by using it and/or triggering someone. If you triggered some random kids with those AP names, then... I don't know, solve it yourself, you must be responsible for your actions.
 >
 >*YOU MUST BE RESPONSIBLE FOR YOUR ACTIONS, RIGHT???*
@@ -29,3 +29,6 @@ It will create an AP, after detecting deauth packages, it will shutdown the AP w
 
 # License
 All files within this repo are released under the GNU GPL V3 License as per the LICENSE file stored in the root of this repo. *You won't have any way to sell this without sharing the source bruh, also I won't expect that.*
+
+# Last words
+`I will be *the one* who doesn't beat the Jet2 holiday` - jk, I have no idea what I was done for this repo.
