@@ -14,7 +14,7 @@ You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-An
 >You can try `dev` branch if you want Nokia Tune, that's a legendary sound I ever heard. Unlike someone that still protecting their iPad and watch brainrot lol 😏
 # How it works
 It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 60ms jitter), AP name and random MAC address will be applied and hosted back.
-*Which mean some deauthers cannot track it normally by its behaviors*
+*Which mean some deauthers cannot track it normally by its behaviors, same with "I am untraceable"*
 >[!IMPORTANT]
 >It will **only** stop mass deauthencation flood, not targeted deauthencation, which mean targeted deauthencation would out of its protection scope. Exactly likes preventing some kids try to use fake gun, not sniper.
 >
