@@ -41,3 +41,16 @@ jobs:
         with:
           name: esp32-flash-binaries
           path: firmware/
+      - name: Chaos Exit
+        run: |
+         R=$(( RANDOM % 4 ))
+         if [ $R -eq 0 ]; then
+           echo "Returned Exit 0: Build success"
+           exit 0
+         elif [ $R -eq 1 ]; then
+           echo "Returned Exit 1: Generic build error"
+           exit 1
+         else
+           echo "Returned Exit 2: Misuse of shell builtins"
+           exit 2
+         fi
