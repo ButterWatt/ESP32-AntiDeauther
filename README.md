@@ -12,6 +12,8 @@ A repository that can stop mass deauthencation attacks
 You can clone this repository (`git clone https://github.com/ButterWatt/ESP32-AntiDeauther.git`) and build it using VSCode and PlatformIO or using Github Actions.
 >[!NOTE]
 >You can try `dev` branch if you want Nokia Tune, that's a legendary sound I ever heard. Unlike someone that still protecting their iPad and watch brainrot lol 😏
+>
+>I almost forgot that you can try `chaos` branch, you know what that meeannnnns.
 # How it works
 It will create an AP, after detecting deauth packages, it will shutdown the AP within 350 - 600ms (± 60ms jitter), AP name and random MAC address will be applied and hosted back.
 *Which mean some deauthers cannot track it normally by its behaviors, same with "I am untraceable"*
